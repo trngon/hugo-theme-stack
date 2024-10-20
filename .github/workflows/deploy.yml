@@ -40,4 +40,4 @@ jobs:
                 --minify \
                 --baseURL "https://ngon.info/"
         - name: Upload files to S3
-          run: aws s3 sync app/public/ s3://data.ngon.info/blog --exact-timestamps --delete
+          run: aws s3 sync exampleSite/public/ s3://data.ngon.info/blog --exact-timestamps --delete
